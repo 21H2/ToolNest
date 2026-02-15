@@ -1,4 +1,6 @@
+
 import React, { useState } from 'react';
+import { supabase } from '../src/lib/supabase';
 import { View, Text, StyleSheet, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -8,15 +10,21 @@ import { colors, fontSize, spacing, radius, shadows } from '../src/constants/the
 
 export default function LoginScreen() {
   const router = useRouter();
-  const { login } = useApp();
   const [loading, setLoading] = useState(false);
 
-  const handleGoogleLogin = async () => {
-    setLoading(true);
-    await login();
+const handleGoogleLogin = async () => {
+  setLoading(true);
+
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: 'google',
+  });
+
+  if (error) {
+    console.log('Login error:', error.message);
     setLoading(false);
-    router.replace('/home');
-  };
+  }
+};
+
 
   return (
     <SafeAreaView style={styles.container} testID="login-screen">
