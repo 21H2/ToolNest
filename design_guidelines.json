@@ -1,0 +1,219 @@
+{
+  "identity": {
+    "name": "ToolNest",
+    "tagline": "The Essential Digital Workshop",
+    "tone": "Professional, Minimal, Fast, Utility-focused",
+    "visual_mood": "Shadcn Aesthetic: Clean lines, subtle borders, refined typography, excellent whitespace",
+    "target_audience": "Students, creators, and developers"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "System (San Francisco / Roboto) - Weight: 700/800",
+      "body": "System (San Francisco / Roboto) - Weight: 400/500",
+      "monospace": "System (Menlo / Monospace) - for code/data"
+    },
+    "scale": {
+      "xs": 12,
+      "sm": 14,
+      "base": 16,
+      "lg": 18,
+      "xl": 20,
+      "2xl": 24,
+      "3xl": 30,
+      "4xl": 36
+    },
+    "rules": {
+      "headings": "Tracking tight (-0.5px), Leading tight. Use for section titles and hero text.",
+      "body": "Leading relaxed (1.5). Use for descriptions and inputs.",
+      "labels": "Uppercase, tracking wide (1px), text-xs, font-semibold, color-zinc-500"
+    }
+  },
+  "colors": {
+    "theme": "light",
+    "palette": {
+      "background": "#FFFFFF",
+      "surface": "#FAFAFA",
+      "surface_highlight": "#F4F4F5",
+      "text": {
+        "primary": "#09090B",
+        "secondary": "#71717A",
+        "tertiary": "#A1A1AA",
+        "inverted": "#FFFFFF"
+      },
+      "border": "#E4E4E7",
+      "primary": "#18181B",
+      "primary_foreground": "#FAFAFA",
+      "accent": "#4F46E5",
+      "accent_foreground": "#FFFFFF",
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "overlay": "rgba(0,0,0,0.4)"
+    },
+    "gradients": {
+      "paywall_bg": ["#EEF2FF", "#E0E7FF"],
+      "splash_bg": ["#FFFFFF", "#F4F4F5"]
+    }
+  },
+  "layout": {
+    "spacing": {
+      "container_padding": 20,
+      "section_gap": 24,
+      "item_gap": 12,
+      "touch_target": 48
+    },
+    "border_radius": {
+      "sm": 6,
+      "md": 8,
+      "lg": 12,
+      "xl": 16,
+      "full": 9999
+    },
+    "shadows": {
+      "soft": {
+        "shadowColor": "#000",
+        "shadowOffset": { "width": 0, "height": 2 },
+        "shadowOpacity": 0.05,
+        "shadowRadius": 4,
+        "elevation": 2
+      },
+      "medium": {
+        "shadowColor": "#000",
+        "shadowOffset": { "width": 0, "height": 4 },
+        "shadowOpacity": 0.08,
+        "shadowRadius": 8,
+        "elevation": 4
+      },
+      "float": {
+        "shadowColor": "#000",
+        "shadowOffset": { "width": 0, "height": 8 },
+        "shadowOpacity": 0.12,
+        "shadowRadius": 16,
+        "elevation": 8
+      }
+    }
+  },
+  "components": {
+    "Button": {
+      "default": {
+        "height": 48,
+        "borderRadius": 24,
+        "backgroundColor": "#18181B",
+        "justifyContent": "center",
+        "alignItems": "center"
+      },
+      "text_style": {
+        "color": "#FFFFFF",
+        "fontWeight": "600",
+        "fontSize": 16
+      },
+      "variants": {
+        "outline": {
+          "backgroundColor": "transparent",
+          "borderWidth": 1,
+          "borderColor": "#E4E4E7"
+        },
+        "ghost": {
+          "backgroundColor": "transparent"
+        },
+        "secondary": {
+            "backgroundColor": "#F4F4F5"
+        }
+      }
+    },
+    "Card": {
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 16,
+        "padding": 16,
+        "borderWidth": 1,
+        "borderColor": "#E4E4E7",
+        "shadowColor": "#000",
+        "shadowOffset": { "width": 0, "height": 1 },
+        "shadowOpacity": 0.05,
+        "shadowRadius": 2,
+        "elevation": 2
+      }
+    },
+    "Input": {
+      "style": {
+        "height": 48,
+        "backgroundColor": "#FAFAFA",
+        "borderRadius": 12,
+        "borderWidth": 1,
+        "borderColor": "#E4E4E7",
+        "paddingHorizontal": 16,
+        "fontSize": 16,
+        "color": "#09090B"
+      }
+    }
+  },
+  "assets": {
+    "icons": {
+      "library": "@expo/vector-icons",
+      "set": "Feather",
+      "size": {
+        "sm": 16,
+        "md": 20,
+        "lg": 24,
+        "xl": 32
+      }
+    },
+    "images": {
+      "splash_abstract": "https://images.unsplash.com/photo-1748723594305-ced0f7c63338?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHdoaXRlJTIwbWluaW1hbGlzdCUyMDNkJTIwZ2VvbWV0cmljJTIwc2hhcGVzJTIwc29mdCUyMGxpZ2h0aW5nfGVufDB8fHx8MTc3MTE4Mzk1NXww&ixlib=rb-4.1.0&q=85",
+      "paywall_bg": "https://images.unsplash.com/photo-1770339030493-d90f5f6cbfb6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxzb2Z0JTIwcGFzdGVsJTIwZ3JhZGllbnQlMjBibHVyJTIwYWJzdHJhY3QlMjB0ZXh0dXJlfGVufDB8fHx8MTc3MTE4Mzk1Nnww&ixlib=rb-4.1.0&q=85"
+    }
+  },
+  "screens": {
+    "Splash": {
+      "type": "Branding",
+      "elements": ["Logo (Icon + Text)", "Abstract Background", "Loading Spinner"]
+    },
+    "Login": {
+      "type": "Auth",
+      "elements": ["Title 'Welcome to ToolNest'", "Subtitle 'Your digital workshop'", "Google Sign-In Button (Mocked)", "Terms Text"],
+      "mock_action": "On press Google -> Wait 1.5s -> Navigate Home"
+    },
+    "Home": {
+      "type": "Dashboard",
+      "layout": "Grid (2 columns)",
+      "elements": ["Header (Greeting + Profile Icon)", "Usage Limit Card (Progress Bar)", "Tools Grid"],
+      "tools": [
+        { "id": "summary", "name": "Summary AI", "icon": "file-text", "color": "#4F46E5" },
+        { "id": "pdf-merge", "name": "PDF Merge", "icon": "layers", "color": "#EA580C" },
+        { "id": "pdf-compress", "name": "PDF Compress", "icon": "minimize-2", "color": "#059669" },
+        { "id": "resume", "name": "Resume Fix", "icon": "briefcase", "color": "#DB2777" },
+        { "id": "bg-remove", "name": "BG Remover", "icon": "image", "color": "#7C3AED" }
+      ]
+    },
+    "ToolTemplate": {
+      "type": "Utility",
+      "elements": ["Header (Back Btn + Title)", "Upload Area (Dotted Border)", "Process Button", "Result Area (Hidden initially)"],
+      "mock_flow": "Upload Tap -> Show filename -> Process Tap -> Loading (2s) -> Show Success Result"
+    },
+    "Paywall": {
+      "type": "Commerce",
+      "elements": ["Close Button", "Pro Badge Icon", "Value Props List", "Pricing Toggle (Monthly/Yearly)", "Subscribe Button", "Restore Link"],
+      "price": "₹99/month"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Use 'lucide-react-native' or '@expo/vector-icons/Feather' for icons.",
+    "Use StyleSheet.create for all styles. Do not use inline styles for complex objects.",
+    "Ensure 'SafeAreaView' is used on all screens with Android StatusBar handling.",
+    "Mock all API calls with 'setTimeout'.",
+    "Use 'ActivityIndicator' for loading states.",
+    "Navigation: Use React Navigation Native Stack.",
+    "Store simple mock state (isLoggedIn, isPro) in a React Context.",
+    "Maintain the whitespace. Do not clutter the UI.",
+    "All TouchableOpacity must have activeOpacity={0.7}."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not use gradients for text.",
+    "Use 2-3x more spacing than typical designs. 'gap: 16' is a minimum.",
+    "Containers with borders must have internal padding (padding: 16) to prevent text collision.",
+    "Never use 'Inter' font unless loaded via expo-font. System font is preferred for performance in this MVP.",
+    "Every interaction needs feedback (opacity change, spinner, or toast).",
+    "Use 'Alert.alert()' for critical mock confirmations if needed, but prefer custom UI feedback."
+  ]
+}
