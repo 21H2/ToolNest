@@ -1,11 +1,10 @@
-
 import React, { useState } from 'react';
 import { supabase } from '../src/lib/supabase';
+
 import { View, Text, StyleSheet, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Feather } from '@expo/vector-icons';
-import { useApp } from '../src/context/AppContext';
 import { colors, fontSize, spacing, radius, shadows } from '../src/constants/theme';
 
 export default function LoginScreen() {
